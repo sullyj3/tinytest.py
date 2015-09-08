@@ -60,12 +60,13 @@ class Test_Case():
         except TypeError as e:
             # this will happen if the number of self.params doesn't match the number of input params for func
             test_passed = False
-            resultstr = "{0} RECEIVED WRONG NUMBER OF ARGUMENTS\n".format(
+            resultstr = "{0} RECEIVED WRONG NUMBER OF ARGUMENTS".format(
                     func.__name__)
 
-        Report += resultstr + "\n"
+        Report += resultstr
 
         if test_passed is not None:
+            Report += '\n'
             if test_passed:
                 Report += "PASS"
             else:

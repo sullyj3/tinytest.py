@@ -30,11 +30,8 @@ if __name__ == '__main__':
             ((True, False), True),
             ((False, True), True),
             ((False, False), False),
-            ((True, "Hamburger"), None)
-            (
-             ("Parrot", "SPAM", "OH GOD WHY ARE THERE SO MANY PARAMS"),
-             "Doesn't matter"
-            )
+            ((True, "Hamburger"), None),
+            (("Parrot", "SPAM", "OH GOD WHY ARE THERE SO MANY PARAMS"), "SPAM")
             ]
 
     xor_group1 = test_group_from_pairs(xor, xortests)

@@ -1,4 +1,4 @@
-from mypytest import *
+from tinytest import *
 
 def lt5(i):
     if i<5:
